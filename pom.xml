@@ -33,7 +33,7 @@
                 <version>1.0.1.Final</version>
                 <configuration>
                      <jbossHome>E:/javaEE/JEE7ToolsEsprit/SERVER/wildfly-8.1.0.Final</jbossHome>
-                    <hostname>127.0.0.1</hostname>
+                    <hostname>192.168.1.101</hostname>
                     <port>10090</port>
                 </configuration>
             </plugin>
