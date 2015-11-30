@@ -21,6 +21,26 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+     <profiles>
+    <profile>
+     <id>profileIP</id>
+     <build>
+        <finalName>HelloJenkins Maven Webapp</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.wildfly.plugins</groupId>
+                <artifactId>wildfly-maven-plugin</artifactId>
+                <version>1.0.1.Final</version>
+                <configuration>
+                     <jbossHome>E:/javaEE/JEE7ToolsEsprit/SERVER/wildfly-8.1.0.Final</jbossHome>
+                    <hostname>127.0.0.1</hostname>
+                    <port>10090</port>
+                </configuration>
+            </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
     <properties>
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
