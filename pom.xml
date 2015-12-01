@@ -49,21 +49,23 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.wildfly.plugins</groupId>
-                <artifactId>wildfly-maven-plugin</artifactId>
-                <version>1.0.1.Final</version>
-                <configuration>
-                    <username>slim</username>
-                    <password>slimslim</password>
-                </configuration>
-            </plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.1</version>
+				<configuration>
+					<server>tomcat7</server>
+					<url>http://192.168.1.101:8585/manager/text</url>
+					<username>admin</username>
+					<password>admin</password>
+				</configuration>
+			</plugin>
         </plugins>
     </build>
     <distributionManagement>
         <repository>
             <id>nexus</id>
             <name>nexus</name>
-            <url>http://192.168.1.102:8081/nexus/content/repositories/snapshots/</url>
+			<url>http://192.168.1.103:8081/nexus/content/repositories/snapshots/</url>
         </repository>
   </distributionManagement>
 </project>
